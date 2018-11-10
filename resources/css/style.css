@@ -210,10 +210,6 @@ h5 {
 }
 
 /*Courses--------------------------------------------------------------------------------------------------------------------------*/
-.course{
-    min-height: 500px;
-}
-
 .course-container{
     position: relative;
     text-align: center;
@@ -221,8 +217,10 @@ h5 {
 }
 .img1{
     position:absolute;
-    top:2px;
+    top:20px;
+    bottom:20px;
     left:2px;
+    margin: 4px;
 }
 .course-img{
     list-style:none;
@@ -241,15 +239,19 @@ h5 {
     background-color: black; 
 }
 .course-photo img{
-    opacity: 0.7;
+    opacity: 0.4;
     width: 100%;
     height: auto;
     transform: scale(1.25);
     transition: transform 0.5s, opacity 0.8s;
 }
 .course-photo img:hover, .course-photo img:active{
-    opacity: 0.2;
+    opacity: 0.1;
     transform: scale(1.06);
+}
+.course-detail{
+    font-size: 75%;
+    margin-top: 10px;
 }
 
 /*Footer---------------------------------------------------------------------------------------------------------------------------*/
