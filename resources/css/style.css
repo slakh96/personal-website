@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+    color: darkslategrey;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px; /*only thing that has absolute value */
+    margin:0 auto 0 auto; /*top, left, bottom, right */
+}
+section{
+    padding: 80px 0;
+    align-content: center;
+}
+h1{
+   font-size: 300%;
+    color: white;
+}
+h2{
+    font-size: 200%;
+    
+}
+h2, h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: darkslategrey;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*------------Header----------------------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(img/IMG_5210.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hder-bg-area {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+           
+}
+/*----------------------------------NavBar----------------------------------------------------------------------*/
+.main-nav {
+    list-style: none;
+    margin-top: 35px;
+    float: right;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    float: left;
+    right: 20px;
+}
+.main-nav li a:link, .main-nav li a:visited {
+    text-transform: uppercase;
+    font-size: 80%; /*80% of the 20px base*/
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+    
+}
+.main-nav li a:hover, .main-nav li a:active{
+    color: #2dca6f;
+}
+.navbar{
+    position: fixed; 
+    right: 6%;
+}
+/*-------------------------Fancy Underline stuff--------------------------------*/
+ .underline {
+       text-decoration: none; 
+       position: relative; 
+     }   
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px; 
+
+
+     /****** 
+     optional values below 
+     ******/
+        
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 50%;
+	background: #27ae60;
+	
+	/* optional animation */
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    }
+	 
+
+	/* optional hover classes used with anmiation */
+	.underline:hover:after {
+	width: 80%;
+	background: #2dca6f;
+}
+
+/*----------Buttons section------------------------------------------------------------------------------------*/
+.btn-container{
+    text-align: center;
+}
+.btn:link, .btn:visited {
+    display: inline-block; /*Inline, but can have padding and no line break*/
+    padding: 20px 10px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5%;
+    color: white;
+    border: 1px solid #27ae60;
+    transition: background 0.3s, border 0.3s, color 0.3s;
+    
+}
+.btn-full:link, .btn-full:visited {
+    background-color: #27ae60;
+}
+.btn-ghost:link, .btn-ghost:visited {
+    color: #27ae60;
+}
+.btn-ghost:hover, .btn-ghost:active{
+    color: #2dca6f;
+    border: 1px solid #2dca6f;
+}
+.btn-full:hover, .btn-full:active{
+    background-color: #2dca6f;
+}
+/*Icons----------------------------------------------------------------------------------------------------*/
+.icon-big{
+    font-size: 400%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill {
+    text-align: center;
+}
+/*Bio--------------------------------------------------------------------------------------------------------*/
+.bio{
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+}
+
+.me-img {
+    position:relative;
+    margin-top: 10%;
+    width: 100%;
+    float:left;
+    
+}
