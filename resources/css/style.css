@@ -27,13 +27,18 @@ h2{
     font-size: 200%;
     
 }
-h2, h1 {
+h2, h1, .hder-bg-area h3 {
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
     font-weight: 300;
     text-transform: uppercase;
     
+}
+h2 {
+    text-align: center;
+}
+.hder-bg-area h3{
+    color: white;
 }
 h2:after{
     display: block;
@@ -57,6 +62,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: left;
            
 }
 /*----------------------------------NavBar----------------------------------------------------------------------*/
@@ -128,7 +134,7 @@ header {
 
 /*----------Buttons section------------------------------------------------------------------------------------*/
 .btn-container{
-    text-align: center;
+    text-align: left; /*Aligns buttons*/
 }
 .btn:link, .btn:visited {
     display: inline-block; /*Inline, but can have padding and no line break*/
@@ -166,15 +172,38 @@ header {
 }
 /*Bio--------------------------------------------------------------------------------------------------------*/
 .bio{
-    width: 70%;
-    margin-left: 15%;
     line-height: 145%;
 }
 
 .me-img {
     position:relative;
-    margin-top: 10%;
+    
     width: 100%;
     float:left;
     
+}
+
+.skills-section {
+    margin-left: 5%;
+}
+
+h6 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h5 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.work-experience li{
+    font-size: 16px;
+    line-height: 145%;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.work-box {
+    padding: 10px;
 }
