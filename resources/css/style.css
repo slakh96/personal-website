@@ -208,9 +208,43 @@ h5 {
 .work-box {
     padding: 10px;
 }
+
+/*Courses--------------------------------------------------------------------------------------------------------------------------*/
+.course{
+    margin-bottom: 200px;
+}
+.course-img{
+    list-style:none;
+    width:80%;
+    margin-left: 10%;
+}
+.course-img li{
+    display: block;
+    float:left;
+    width: 25%;
+}
+.course-photo{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black; 
+}
+.course-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.8s;
+}
+.course-photo img:hover, .course-photo img:active{
+    opacity: 0.2;
+    transform: scale(1.06);
+}
+
 /*Footer---------------------------------------------------------------------------------------------------------------------------*/
 footer {
     background-color: lightgrey;
+    margin-top: 50px;
 }
 .footer-nav{
     list-style: none;
@@ -222,6 +256,9 @@ footer {
     border-top: 3px solid #2dca6f;
     border-bottom: 3px solid #2dca6f;
     border-radius: 10%;*/
+}
+.footer-nav li:hover, .footer-nav li:active{
+    color: yellow;
 }
 .contactmeh3 {
     padding: 20px 10px;
