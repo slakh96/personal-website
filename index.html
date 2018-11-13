@@ -4,8 +4,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href = "vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+        <script language="JavaScript" type="text/javascript" src="vendors/js/jquery-3.3.1.min.js"></script>
         <title>Shahzil Lakhani</title>
     </head>
     <body>
@@ -13,12 +13,12 @@
             <nav class = "navbar">
             <div class="row">
                 <ul class = "main-nav">
-                    <li><a href="#" class="underline">Bio</a></li>
-                    <li><a href="#" class="underline">Skills</a></li>
-                    <li><a href="#" class="underline">Projects</a></li>
-                    <li><a href="#" class="underline">Work Experience</a></li>
-                    <li><a href="#" class="underline">Courses</a></li>
-                    <li><a href="#" class="underline">Contact</a></li>
+                    <li><a href="#bio" class="underline">Bio</a></li>
+                    <li><a href="#skills" class="underline">Skills</a></li>
+                    <li><a href="#projects" class="underline">Projects</a></li>
+                    <li><a href="#work-experience" class="underline">Work Experience</a></li>
+                    <li><a href="#courses" class="underline">Courses</a></li>
+                    <li><a href="#footerdiv" class="underline">Contact</a></li>
                 </ul>
             </div>
             </nav>
@@ -26,12 +26,12 @@
                 <h1>Hi, I'm Shahzil</h1>
                 <h3>Programmer, Computer Science Student</h3>
                 <div class = "btn-container">
-                    <a class = "btn btn-full" href="#">View my Bio</a>
+                    <a class = "btn btn-full" href="#bio">View my Bio</a>
                     
                 </div>
             </div>
         </header>
-        <section class = "bio">
+        <section class = "bio" id = "bio">
             <h2>Biography</h2>
             <div class="row">
                 <div class="col span-1-of-4">
@@ -45,7 +45,7 @@
             </div>
         
         </section>
-        <section class = "skills-section">
+        <section class = "skills-section" id ="skills">
             <div class="row">
                 <h2>My Skills</h2>
             </div>
@@ -89,11 +89,11 @@
              
             
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             
         </section>
-        <section class="work-experience">
+        <section class="work-experience" id="work-experience">
             <h2>Work Experience</h2>
             <div class = "row">
                 <div class = "col span-1-of-2 work-box">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="courses">
+        <section class="courses" id = "courses">
             
             <h2>Courses</h2>
             <ul class = "course-img">
@@ -223,9 +223,8 @@
          <h1> `''''''`````</h1>
         </section>
         
-
         <footer>
-            <div class="footerdiv">
+            <div id="footerdiv">
                 <h3 class="contactmeh3">Contact me</h3>
                 <ul class="footer-nav">
                     <li><a href="https://github.com/slakh96" target="_blank"><ion-icon name="logo-github" class="icon-big footer-icon" size="large" style="color:black"></ion-icon></a></li>
@@ -236,9 +235,8 @@
             </div>
         </footer>
 
-        
-        
-       <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script> 
+        <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+        <script language="JavaScript" type="text/javascript" src="resources/js/script.js"></script>
     </body>
 <!---Next: Fix NavBar, slideshow for side projects (make them into images), buttons for going from one section to another, transitions for sections, slideshows for the top image (with professional pics). Put resume--->
 </html>

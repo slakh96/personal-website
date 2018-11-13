@@ -10,6 +10,7 @@ html{
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    /*scroll-behavior: smooth;*/
 }
 .row{
     max-width: 1140px; /*only thing that has absolute value */
@@ -67,8 +68,10 @@ header {
 }
 /*----------------------------------NavBar----------------------------------------------------------------------*/
 .main-nav {
+    margin-right: 0%;
     list-style: none;
-    margin-top: 35px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     float: right;
     
 }
@@ -76,7 +79,7 @@ header {
     display: inline-block;
     margin-left: 40px;
     float: left;
-    right: 20px;
+    /*left: 10px;*/
 }
 .main-nav li a:link, .main-nav li a:visited {
     text-transform: uppercase;
@@ -90,8 +93,16 @@ header {
     color: #2dca6f;
 }
 .navbar{
-    position: fixed; 
-    right: 6%;
+    position: fixed;
+    width: 100%;
+    right: 0%;
+    padding-bottom: 10px;
+    transition: background-color 400ms linear;
+}
+.navbar-scrolled{
+    background-color: darkslategrey;
+    z-index: 1;
+    transition: background-color 400ms linear;
 }
 /*-------------------------Fancy Underline stuff--------------------------------*/
  .underline {
