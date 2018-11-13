@@ -20,5 +20,36 @@ $(document).ready(function () {
             });
         });
     });
+    /*Make each section fade in when we scroll to it the first time*/
+    $('.js-scrolled-bio').waypoint(function(direction) {
+        $('.js-scrolled-bio').addClass("animated fadeInLeft");
+    }, {
+        offset: '50%'
+    });
+    $('.js-scrolled-skills').waypoint(function(direction) {
+        $('.js-scrolled-skills').addClass("animated fadeInRight");
+    }, {
+        offset: '50%'
+    });
+     $('.js-scrolled-projects').waypoint(function(direction) {
+        $('.js-scrolled-projects').addClass("animated fadeInLeft");
+    }, {
+        offset: '50%'
+    });
+    $('.js-scrolled-work-experience').waypoint(function(direction) {
+        $('.js-scrolled-work-experience').addClass("animated fadeInRight");
+    }, {
+        offset: '50%'
+    });
+    $('.js-scrolled-courses').waypoint(function(direction) {
+        $('.js-scrolled-courses').addClass("animated fadeInLeft");
+    }, {
+        offset: '50%'
+    });
+    $('.js-scrolled-footer').waypoint(function(direction) {
+        $('.js-scrolled-footer').addClass("animated fadeIn");
+    }, {
+        offset: '90%'
+    });
     
 });

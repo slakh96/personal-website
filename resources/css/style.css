@@ -188,6 +188,7 @@ header {
 /*Bio and skills--------------------------------------------------------------------------------------------------------*/
 #bio{
     line-height: 145%;
+    opacity: 0;
 }
 
 .me-img {
@@ -200,6 +201,11 @@ header {
 
 #skills-section {
     margin-left: 5%;
+    opacity: 0; /*Initializes opacity to zero*/
+}
+/*Projects---------------------------------------------------------------------------------------------------------*/
+#projects{
+    opacity: 0; /*Initial opacity*/
 }
 /*Work experience------------------------------------------------------------------------------------------------------------*/
 
@@ -213,6 +219,9 @@ h5 {
     margin-bottom: 15px;
     font-weight: 100;
 }
+#work-experience {
+    opacity: 0;
+}
 
 #work-experience li{
     font-size: 16px;
@@ -225,6 +234,9 @@ h5 {
 }
 
 /*Courses--------------------------------------------------------------------------------------------------------------------------*/
+#courses{
+    opacity: 0;
+}
 .course-container{
     position: relative;
     text-align: center;
@@ -273,6 +285,7 @@ h5 {
 footer {
     background-color: lightgrey;
     margin-top: 50px;
+    opacity: 0;
 }
 .footer-nav{
     list-style: none;
@@ -293,4 +306,24 @@ footer {
     color: darkslategrey;
     text-align:center;
     font-weight: 400;
+}
+/*Waypoint animations------------------------------------------------------------------------------------------*/
+
+.js-scrolled-bio.animated{/*Requires that element has both classes*/
+    opacity: 1;
+}
+.js-scrolled-skills.animated{
+    opacity: 1;
+}
+.js-scrolled-projects.animated{
+    opacity: 1;
+}
+.js-scrolled-work-experience.animated{
+    opacity: 1;
+}
+.js-scrolled-courses.animated{
+    opacity: 1;
+}
+.js-scrolled-footer.animated{
+    opacity: 1;
 }
