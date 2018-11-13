@@ -4,239 +4,242 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href = "vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
         <script language="JavaScript" type="text/javascript" src="vendors/js/jquery-3.3.1.min.js"></script>
         <title>Shahzil Lakhani</title>
     </head>
     <body>
-        <header> <!--works lke a div element, but tells search engines what this is all about-->
-            <nav class = "navbar">
-            <div class="row">
-                <ul class = "main-nav">
-                    <li><a href="#bio" class="underline">Bio</a></li>
-                    <li><a href="#skills" class="underline">Skills</a></li>
-                    <li><a href="#projects" class="underline">Projects</a></li>
-                    <li><a href="#work-experience" class="underline">Work Experience</a></li>
-                    <li><a href="#courses" class="underline">Courses</a></li>
-                    <li><a href="#footerdiv" class="underline">Contact</a></li>
-                </ul>
-            </div>
-            </nav>
-            <div class="hder-bg-area">
-                <h1>Hi, I'm Shahzil</h1>
-                <h3>Programmer, Computer Science Student</h3>
-                <div class = "btn-container">
-                    <a class = "btn btn-full" href="#bio">View my Bio</a>
-                    
-                </div>
-            </div>
-        </header>
-        <section class = "bio" id = "bio">
-            <h2>Biography</h2>
-            <div class="row">
-                <div class="col span-1-of-4">
-                    <img class = "me-img" src="resources/img/IMG_5245.JPG">
-                </div>
-                <div class="col span-3-of-4">
-                    <p>Hi! My name is Shahzil Lakhani, and I am a second-year undergraduate student currently studying at the University of Toronto. I'm currently pursuing an Honours Bachelor of Science in Computer Science. I'm enrolled in U of T's Computer Science Specialist program and the Statistics Minor program. I am an avid programmer. Some of my hobbies include cycling, learning about cars, photography, reading, and watching hockey. I also enjoy examining statistics (particularly hockey statistics) and using those to predict future player performance. <br><br>
-                    Outside of that, I have a passion for teaching. I have been teaching math to students in grades 1-12 for the past year, including AP Calculus and Advanced Functions. I am also a peer mentor for the course "Introduction to the Theory of Computation." This summer, I am seeking an internship in Software Development or Web Design.
-                    </p>
-                </div>
-            </div>
-        
-        </section>
-        <section class = "skills-section" id ="skills">
-            <div class="row">
-                <h2>My Skills</h2>
-            </div>
-            <div class = "row">
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-javascript" class="icon-big" size="large"></ion-icon>
-                    <p class = "skill javascript">JavaScript</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="build" class="icon-big" size="large"></ion-icon>
-                    <p class = "skill java">Java</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-python" class="icon-big" size="large"></ion-icon>
-                    <p class="skill python">Python</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-html5" class="icon-big" size="large"></ion-icon>
-                    <p class = "skill html">HTML</p>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-css3" class="icon-big" size="large"></ion-icon>
-                    <p class="skill css">CSS</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-markdown" class="icon-big" size="large"></ion-icon>
-                    <p class="skill markdown">Markdown</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="cog" class="icon-big" size="large"></ion-icon>
-                    <p class="skill latex">LaTex</p>
-                </div>
-                <div class="col span-1-of-4">
-                    <ion-icon name="logo-github" class="icon-big" size="large"></ion-icon>
-                    <p class="skill git">Git</p>
-                </div>
-            </div>
-             
-            
-        </section>
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            
-        </section>
-        <section class="work-experience" id="work-experience">
-            <h2>Work Experience</h2>
-            <div class = "row">
-                <div class = "col span-1-of-2 work-box">
-                    <h3>Mathnasium<a href = "https://www.mathnasium.ca/" target="_blank"><img src ="resources/img/math-logo.jpg" style="height: 22px; width: auto;"></a></h3>
-                    <h5>Instructor/Lead Instructor</h5>
-                    <ul>
-                        <li>Teaching math to students in grades 1-12, including AP Calculus and Vectors</li>
-                        <li>Developed communication and interpersonal skills while interacting with parents, coworkers, and students.</li>
-                        <li>Presented information about the Centre to prospective customers</li>
-                        <li>Developed organizational, professional and managerial skills while serving as Lead Instructor.</li>
+        <div class = "hidden"><!---Hides the webpage until ready-->
+            <header> <!--works lke a div element, but tells search engines what this is all about-->
+                <nav class = "navbar">
+                <div class="row">
+                    <ul class = "main-nav">
+                        <li><a href="#bio" class="underline">Bio</a></li>
+                        <li><a href="#skills-section" class="underline">Skills</a></li>
+                        <li><a href="#projects" class="underline">Projects</a></li>
+                        <li><a href="#work-experience" class="underline">Work Experience</a></li>
+                        <li><a href="#courses" class="underline">Courses</a></li>
+                        <li><a href="#footerdiv" class="underline">Contact</a></li>
                     </ul>
                 </div>
-                <div class = "col span-1-of-2 work-box">
-                    <h3>Pedalheads Bike Camps<a href = "https://www.pedalheads.com/" target="_blank"><img src="resources/img/pedalheads-logo.jpg" style="height: 22px; width: auto;"></a></h3>
-                    <h5>Instructor</h5>
-                    <u1>
-                        <li>Taught children between ages 4-15 cycling skills, including safe cycling practices.</li>
-                        <li>Developed decision-making and problem-solving skills through engagement in conflict resolution.</li>
-                        <li>Interacted professionally with parents, coworkers and supervisors.</li>
-                    </u1>
-                </div>
-            </div>
-        </section>
-        <section class="courses" id = "courses">
-            
-            <h2>Courses</h2>
-            <ul class = "course-img">
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC236H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Introduction to the Theory of Computation</p>
-                            <p class="course-detail">The application of logic and proof techniques to Computer Science. Mathematical induction; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions; introduction to automata and formal languages.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-1.png" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC207H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Software Design</p>
-                            <p class="course-detail"> An introduction to software design and development concepts, methods, and tools using a statically-typed object-oriented programming language such as Java. Topics from: version control, unit testing, refactoring, object-oriented design and development, design patterns, advanced IDE usage, regular expressions, and reflection. Representation of floating-point numbers and introduction to numerical computation.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-2.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC165H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p> Mathematical Expression and Reasoning for Computer Science</p>
-                            <p class="course-detail">Introduction to abstraction and rigour. Informal introduction to logical notation and reasoning. Understanding, using and developing precise expressions of mathematical ideas, including definitions and theorems. Structuring proofs to improve presentation and comprehension. General problem-solving techniques. Running time analysis of iterative programs. Formal definition of Big-Oh. </p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-3.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-            </ul> 
-            <ul class = "course-img">
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC148H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Introduction to Computer Science</p>
-                            <p class="course-detail">Abstract data types and data structures for implementing them. Linked data structures. Encapsulation and information-hiding. Object-oriented programming. Specifications. Analyzing the efficiency of programs. Recursion.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-8.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC108H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Introduction to Computer Programming</p>
-                            <p class="course-detail">Programming in Python. Elementary data types, lists, maps. Program structure: control flow, functions, classes, objects, methods. Algorithms and problem solving. Searching, sorting, and complexity. Unit testing. </p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-5.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/MAT223H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Linear Algebra I</p>
-                            <p class="course-detail">Systems of linear equations, matrix algebra, real vector spaces, subspaces, span, linear dependence and independence, bases, rank, inner products, orthogonality, orthogonal complements, Gram-Schmidt, linear transformations, determinants, Cramer's rule, eigenvalues, eigenvectors, eigenspaces, diagonalization.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-6.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-            </ul>
-            <ul class="course-img">
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC209H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Software Tools and Systems Programming (Winter 2019)</p>
-                            <p class="course-detail">Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (typically C). What goes on in the operating system when programs are executed. Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-7.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/CSC258H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Computer Organization (Winter 2019)</p>
-                            <p class="course-detail">Computer structures, machine languages, instruction execution, addressing techniques, and digital representation of data. Computer system organization, memory storage devices, and microprogramming. Block diagram circuit realizations of memory, control and arithmetic functions. There are a number of laboratory periods in which students conduct experiments with digital logic circuits.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-4.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-                <li><a href="https://fas.calendar.utoronto.ca/course/STA247H1" target="_blank">
-                    <div class="course-container">
-                        <div class="img1">
-                            <p>Probability with Computer Applications (Winter 2019)</p>
-                            <p class="course-detail">Introduction to the theory of probability, with emphasis on applications in computer science. The topics covered include random variables, discrete and continuous probability distributions, expectation and variance, independence, conditional probability, normal, exponential, binomial, and Poisson distributions.</p>
-                        </div>
-                    </div>
-                    <figure class="course-photo"><img src="resources/img/course-bg-9.jpg" alt="course background image"></figure>
-                    </a>
-                </li>
-            </ul>
-            
-            
-        </section>
-        <section>
-         <h1> `''''''`````</h1>
-        </section>
-        
-        <footer>
-            <div id="footerdiv">
-                <h3 class="contactmeh3">Contact me</h3>
-                <ul class="footer-nav">
-                    <li><a href="https://github.com/slakh96" target="_blank"><ion-icon name="logo-github" class="icon-big footer-icon" size="large" style="color:black"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com/in/shahzil-lakhani-512a28174/" target="_blank" style="color:#007bb5"><ion-icon name="logo-linkedin" class="icon-big footer-icon" size="large"></ion-icon></a></li>
-                    <li><a href="mailto:s.lakhani@hotmail.ca"><ion-icon name="mail" class="icon-big footer-icon" size="large"></ion-icon></a></li>
-                    <li><a href="#" style="color:#a82400"><ion-icon name="paper" class="icon-big footer-icon" size="large"></ion-icon></a></li>
-                </ul>
-            </div>
-        </footer>
+                </nav>
+                <div class="hder-bg-area">
+                    <h1>Hi, I'm Shahzil</h1>
+                    <h3>Programmer, Computer Science Student</h3>
+                    <div class = "btn-container">
+                        <a class = "btn btn-full" href="#bio">View my Bio</a>
 
-        <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
-        <script language="JavaScript" type="text/javascript" src="resources/js/script.js"></script>
+                    </div>
+                </div>
+            </header>
+            <section id = "bio">
+                <h2>Biography</h2>
+                <div class="row">
+                    <div class="col span-1-of-4">
+                        <img class = "me-img" src="resources/img/IMG_5245.JPG">
+                    </div>
+                    <div class="col span-3-of-4">
+                        <p>Hi! My name is Shahzil Lakhani, and I am a second-year undergraduate student currently studying at the University of Toronto. I'm currently pursuing an Honours Bachelor of Science in Computer Science. I'm enrolled in U of T's Computer Science Specialist program and the Statistics Minor program. I am an avid programmer. Some of my hobbies include cycling, learning about cars, photography, reading, and watching hockey. I also enjoy examining statistics (particularly hockey statistics) and using those to predict future player performance. <br><br>
+                        Outside of that, I have a passion for teaching. I have been teaching math to students in grades 1-12 for the past year, including AP Calculus and Advanced Functions. I am also a peer mentor for the course "Introduction to the Theory of Computation." This summer, I am seeking an internship in Software Development or Web Design.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+            <section id ="skills-section">
+                <div class="row">
+                    <h2>My Skills</h2>
+                </div>
+                <div class = "row">
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-javascript" class="icon-big" size="large"></ion-icon>
+                        <p class = "skill javascript">JavaScript</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="build" class="icon-big" size="large"></ion-icon>
+                        <p class = "skill java">Java</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-python" class="icon-big" size="large"></ion-icon>
+                        <p class="skill python">Python</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-html5" class="icon-big" size="large"></ion-icon>
+                        <p class = "skill html">HTML</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-css3" class="icon-big" size="large"></ion-icon>
+                        <p class="skill css">CSS</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-markdown" class="icon-big" size="large"></ion-icon>
+                        <p class="skill markdown">Markdown</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="cog" class="icon-big" size="large"></ion-icon>
+                        <p class="skill latex">LaTex</p>
+                    </div>
+                    <div class="col span-1-of-4">
+                        <ion-icon name="logo-github" class="icon-big" size="large"></ion-icon>
+                        <p class="skill git">Git</p>
+                    </div>
+                </div>
+
+
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+
+            </section>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div class = "row">
+                    <div class = "col span-1-of-2 work-box">
+                        <h3>Mathnasium<a href = "https://www.mathnasium.ca/" target="_blank"><img src ="resources/img/math-logo.jpg" style="height: 22px; width: auto;"></a></h3>
+                        <h5>Instructor/Lead Instructor</h5>
+                        <ul>
+                            <li>Teaching math to students in grades 1-12, including AP Calculus and Vectors</li>
+                            <li>Developed communication and interpersonal skills while interacting with parents, coworkers, and students.</li>
+                            <li>Presented information about the Centre to prospective customers</li>
+                            <li>Developed organizational, professional and managerial skills while serving as Lead Instructor.</li>
+                        </ul>
+                    </div>
+                    <div class = "col span-1-of-2 work-box">
+                        <h3>Pedalheads Bike Camps<a href = "https://www.pedalheads.com/" target="_blank"><img src="resources/img/pedalheads-logo.jpg" style="height: 22px; width: auto;"></a></h3>
+                        <h5>Instructor</h5>
+                        <u1>
+                            <li>Taught children between ages 4-15 cycling skills, including safe cycling practices.</li>
+                            <li>Developed decision-making and problem-solving skills through engagement in conflict resolution.</li>
+                            <li>Interacted professionally with parents, coworkers and supervisors.</li>
+                        </u1>
+                    </div>
+                </div>
+            </section>
+            <section id = "courses">
+
+                <h2>Courses</h2>
+                <ul class = "course-img">
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC236H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Introduction to the Theory of Computation</p>
+                                <p class="course-detail">The application of logic and proof techniques to Computer Science. Mathematical induction; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions; introduction to automata and formal languages.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-1.png" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC207H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Software Design</p>
+                                <p class="course-detail"> An introduction to software design and development concepts, methods, and tools using a statically-typed object-oriented programming language such as Java. Topics from: version control, unit testing, refactoring, object-oriented design and development, design patterns, advanced IDE usage, regular expressions, and reflection. Representation of floating-point numbers and introduction to numerical computation.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-2.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC165H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p> Mathematical Expression and Reasoning for Computer Science</p>
+                                <p class="course-detail">Introduction to abstraction and rigour. Informal introduction to logical notation and reasoning. Understanding, using and developing precise expressions of mathematical ideas, including definitions and theorems. Structuring proofs to improve presentation and comprehension. General problem-solving techniques. Running time analysis of iterative programs. Formal definition of Big-Oh. </p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-3.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                </ul> 
+                <ul class = "course-img">
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC148H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Introduction to Computer Science</p>
+                                <p class="course-detail">Abstract data types and data structures for implementing them. Linked data structures. Encapsulation and information-hiding. Object-oriented programming. Specifications. Analyzing the efficiency of programs. Recursion.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-8.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC108H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Introduction to Computer Programming</p>
+                                <p class="course-detail">Programming in Python. Elementary data types, lists, maps. Program structure: control flow, functions, classes, objects, methods. Algorithms and problem solving. Searching, sorting, and complexity. Unit testing. </p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-5.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/MAT223H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Linear Algebra I</p>
+                                <p class="course-detail">Systems of linear equations, matrix algebra, real vector spaces, subspaces, span, linear dependence and independence, bases, rank, inner products, orthogonality, orthogonal complements, Gram-Schmidt, linear transformations, determinants, Cramer's rule, eigenvalues, eigenvectors, eigenspaces, diagonalization.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-6.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="course-img">
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC209H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Software Tools and Systems Programming (Winter 2019)</p>
+                                <p class="course-detail">Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (typically C). What goes on in the operating system when programs are executed. Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-7.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/CSC258H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Computer Organization (Winter 2019)</p>
+                                <p class="course-detail">Computer structures, machine languages, instruction execution, addressing techniques, and digital representation of data. Computer system organization, memory storage devices, and microprogramming. Block diagram circuit realizations of memory, control and arithmetic functions. There are a number of laboratory periods in which students conduct experiments with digital logic circuits.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-4.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                    <li><a href="https://fas.calendar.utoronto.ca/course/STA247H1" target="_blank">
+                        <div class="course-container">
+                            <div class="img1">
+                                <p>Probability with Computer Applications (Winter 2019)</p>
+                                <p class="course-detail">Introduction to the theory of probability, with emphasis on applications in computer science. The topics covered include random variables, discrete and continuous probability distributions, expectation and variance, independence, conditional probability, normal, exponential, binomial, and Poisson distributions.</p>
+                            </div>
+                        </div>
+                        <figure class="course-photo"><img src="resources/img/course-bg-9.jpg" alt="course background image"></figure>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </section>
+            <section>
+             <h1> `''''''`````</h1>
+            </section>
+
+            <footer>
+                <div id="footerdiv">
+                    <h3 class="contactmeh3">Contact me</h3>
+                    <ul class="footer-nav">
+                        <li><a href="https://github.com/slakh96" target="_blank"><ion-icon name="logo-github" class="icon-big footer-icon" size="large" style="color:black"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/shahzil-lakhani-512a28174/" target="_blank" style="color:#007bb5"><ion-icon name="logo-linkedin" class="icon-big footer-icon" size="large"></ion-icon></a></li>
+                        <li><a href="mailto:s.lakhani@hotmail.ca"><ion-icon name="mail" class="icon-big footer-icon" size="large"></ion-icon></a></li>
+                        <li><a href="#" style="color:#a82400"><ion-icon name="paper" class="icon-big footer-icon" size="large"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+            <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+            <script language="JavaScript" type="text/javascript" src="resources/js/script.js"></script>
+        </div>
     </body>
 <!---Next: Fix NavBar, slideshow for side projects (make them into images), buttons for going from one section to another, transitions for sections, slideshows for the top image (with professional pics). Put resume--->
 </html>
