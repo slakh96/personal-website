@@ -63,7 +63,7 @@ header {
 .hder-bg-area {
     position: absolute;
     width: 1140px;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -150,6 +150,7 @@ header {
 /*----------Buttons section------------------------------------------------------------------------------------*/
 .btn-container{
     text-align: left; /*Aligns buttons*/
+    margin-top: 10px;
 }
 .btn:link, .btn:visited {
     display: inline-block; /*Inline, but can have padding and no line break*/
