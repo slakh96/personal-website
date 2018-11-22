@@ -55,9 +55,9 @@ h2:after{
 }
 /*------------Header----------------------------------------------*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(img/IMG_5210.JPG);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0), rgba(0,0,0,0.7)), url(img/IMG_5714.JPG);
+    background-position: 60% 40%;
     background-size: cover;
-    background-position: center;
     height: 100vh;
 }
 .hder-bg-area {
@@ -194,7 +194,6 @@ header {
 
 .me-img {
     position:relative;
-    
     width: 100%;
     float:left;
     
@@ -279,7 +278,9 @@ h5 {
 }
 .course-detail{
     font-size: 75%;
-    margin-top: 10px;
+/*    margin-top: 10px;*/
+    line-height: 140%;
+    padding:15px;
 }
 
 /*Footer---------------------------------------------------------------------------------------------------------------------------*/
