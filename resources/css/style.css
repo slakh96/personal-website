@@ -26,7 +26,7 @@ h1{
 }
 h2{
     font-size: 200%;
-    
+    text-align: center;
 }
 h2, h1, .hder-bg-area h3 {
     margin-top: 0;
@@ -35,9 +35,7 @@ h2, h1, .hder-bg-area h3 {
     text-transform: uppercase;
     
 }
-h2 {
-    text-align: center;
-}
+
 .hder-bg-area h3{
     color: white;
 }
@@ -347,3 +345,5 @@ footer {
 .course-link:hover, .course-link:active{
     text-decoration: underline;
 }
+
+
