@@ -339,3 +339,11 @@ footer {
     margin-right: auto;
     display: block;
 }
+
+.course-link {
+    text-decoration: none;
+    color: darkslategrey;
+}
+.course-link:hover, .course-link:active{
+    text-decoration: underline;
+}
