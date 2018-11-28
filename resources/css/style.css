@@ -100,7 +100,7 @@ header {
     padding-bottom: 10px;
     transition: background-color 400ms linear;
 }
-.navbar-scrolled{
+.navbar-scrolled, .navbar:hover{
     background-color: darkslategrey;
     /*border-bottom: 2px solid darkslategrey;*/
     z-index: 1;
@@ -150,6 +150,10 @@ header {
     text-align: left; /*Aligns buttons*/
     margin-top: 10px;
 }
+.btn-container-center{
+    text-align: center;
+    margin-top: 10px;
+}
 .btn:link, .btn:visited {
     display: inline-block; /*Inline, but can have padding and no line break*/
     padding: 20px 10px;
@@ -184,6 +188,19 @@ header {
 .skill {
     text-align: center;
 }
+.skill-img {
+    padding: 0 6px;
+    left: 50%;
+    float: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+.skill-img:hover{
+    transform: scale(1.1)
+}
 /*Bio and skills--------------------------------------------------------------------------------------------------------*/
 #bio{
     line-height: 145%;
@@ -204,6 +221,12 @@ header {
 /*Projects---------------------------------------------------------------------------------------------------------*/
 #projects{
     opacity: 0; /*Initial opacity*/
+}
+.grow{
+    transition: all .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.1);    
 }
 /*Work experience------------------------------------------------------------------------------------------------------------*/
 
@@ -274,11 +297,21 @@ h5 {
     opacity: 0.1;
     transform: scale(1.06);
 }
-.course-detail{
+.course-detail, .project-detail{
     font-size: 75%;
 /*    margin-top: 10px;*/
     line-height: 140%;
+    
+}
+.course-detail{
     padding:15px;
+}
+.course-link {
+    text-decoration: none;
+    color: darkslategrey;
+}
+.course-link:hover, .course-link:active{
+    text-decoration: underline;
 }
 
 /*Footer---------------------------------------------------------------------------------------------------------------------------*/
@@ -328,22 +361,8 @@ footer {
     opacity: 1;
 }
 
-.skill-img {
-    padding: 0 6px;
-    left: 50%;
-    float: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.icon-size {
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
-
-.course-link {
-    text-decoration: none;
-    color: darkslategrey;
-}
-.course-link:hover, .course-link:active{
-    text-decoration: underline;
-}
-
-

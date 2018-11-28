@@ -3,6 +3,7 @@ var $ = jQuery;
 $(document).ready(function () {
     /*Fades in the page when the document is ready*/
     $('div.hidden').fadeIn(2000).removeClass('hidden');
+    
     /*Changes the background color of the navigation*/
     $(function () {
         $(document).scroll(function () {
