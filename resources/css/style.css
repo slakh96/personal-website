@@ -60,6 +60,15 @@ header {
     background-size: cover;
     height: 100vh;
 }
+.hder-bg-area {
+    position: absolute;
+    width: 1140px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+           
+}
 /*----------------------------------NavBar----------------------------------------------------------------------*/
 .main-nav {
     margin-right: 0%;
