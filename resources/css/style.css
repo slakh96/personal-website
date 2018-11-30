@@ -7,10 +7,12 @@ html{
     background-color: #ffffff;
     color: darkslategrey;
     font-family: "Lato", "Arial", sans-serif;
-    font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     /*scroll-behavior: smooth;*/
+}
+body{
+    font-size: 20px;
 }
 .row{
     max-width: 1140px; /*only thing that has absolute value */
@@ -57,15 +59,6 @@ header {
     background-position: 60% 40%;
     background-size: cover;
     height: 100vh;
-}
-.hder-bg-area {
-    position: absolute;
-    width: 1140px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-           
 }
 /*----------------------------------NavBar----------------------------------------------------------------------*/
 .main-nav {
