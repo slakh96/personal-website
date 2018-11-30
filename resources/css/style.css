@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 html{
@@ -21,6 +22,7 @@ body{
 }
 section{
     padding: 80px 0;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 h1{
@@ -56,6 +58,7 @@ h2:after{
 }
 /*------------Header----------------------------------------------*/
 header {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.0)), to(rgba(0,0,0,0.7))), url(img/IMG_5714.JPG);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0), rgba(0,0,0,0.7)), url(img/IMG_5714.JPG);
     background-position: 60% 40%;
     background-size: cover;
@@ -66,6 +69,7 @@ header {
     width: 1140px;
     top: 60%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);*/
     text-align: left;
            
@@ -90,6 +94,7 @@ header {
     font-size: 80%; /*80% of the 20px base*/
     text-decoration: none;
     color: white;
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
     
 }
@@ -101,12 +106,14 @@ header {
     width: 100%;
     right: 0%;
     padding-bottom: 10px;
+    -webkit-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
 .navbar-scrolled, .navbar:hover{
     background-color: darkslategrey;
     /*border-bottom: 2px solid darkslategrey;*/
     z-index: 1;
+    -webkit-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
 /*-------------------------Fancy Underline stuff--------------------------------*/
@@ -134,11 +141,8 @@ header {
 	background: #27ae60;
 	
 	/* optional animation */
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+ -webkit-transition:.5s;
+ transition:.5s;
     }
 	 
 
@@ -165,6 +169,7 @@ header {
     border-radius: 5%;
     color: white;
     border: 1px solid #27ae60;
+    -webkit-transition: background 0.3s, border 0.3s, color 0.3s;
     transition: background 0.3s, border 0.3s, color 0.3s;
     
 }
@@ -200,12 +205,14 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .project-img{
     padding: 10px 6px;
 }
 .skill-img:hover{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 /*Bio and skills--------------------------------------------------------------------------------------------------------*/
@@ -230,9 +237,11 @@ header {
     opacity: 0; /*Initial opacity*/
 }
 .grow{
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .grow:hover{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);    
 }
 /*Work experience------------------------------------------------------------------------------------------------------------*/
@@ -298,11 +307,16 @@ h5 {
     opacity: 0.4;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.5s;
+    transition: opacity 0.8s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.8s;
+    transition: transform 0.5s, opacity 0.8s, -webkit-transform 0.5s;
 }
 .course-photo img:hover, .course-photo img:active{
     opacity: 0.1;
+    -webkit-transform: scale(1.06);
     transform: scale(1.06);
 }
 .course-detail{
