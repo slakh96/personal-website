@@ -193,6 +193,7 @@ header {
 }
 .skill-img {
     padding: 0 6px;
+    padding-bottom: 16px;
     left: 50%;
     float: left;
     width: 80%;
