@@ -201,6 +201,9 @@ header {
     display: block;
     transition: all .2s ease-in-out;
 }
+.project-img{
+    padding: 10px 6px;
+}
 .skill-img:hover{
     transform: scale(1.1)
 }
@@ -311,6 +314,7 @@ h5 {
     font-size: 100%;
     line-height: 140%;
     text-align: center;
+    padding-bottom: 10px;
 }
 .course-detail{
     padding:15px;
