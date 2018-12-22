@@ -10,7 +10,6 @@ html{
     font-family: "Lato", "Arial", sans-serif;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    /*scroll-behavior: smooth;*/
     overflow-x: hidden;
 }
 body{
@@ -38,9 +37,7 @@ h2, h1, .hder-bg-area h3 {
     margin-bottom: 20px;
     font-weight: 300;
     text-transform: uppercase;
-    
 }
-
 .hder-bg-area h3{
     color: white;
 }
@@ -72,8 +69,14 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);*/
-    text-align: left;
-           
+    text-align: left;        
+}
+.hder-image-icon {
+    width: 80%;
+    padding-top: 10px;
+    float: right;
+    display: block;
+    border-radius: 0%;   
 }
 /*----------------------------------NavBar----------------------------------------------------------------------*/
 .main-nav {
@@ -88,7 +91,6 @@ header {
     display: inline-block;
     margin-left: 40px;
     float: left;
-    /*left: 10px;*/
 }
 .main-nav li a:link, .main-nav li a:visited {
     text-transform: uppercase;
@@ -112,7 +114,6 @@ header {
 }
 .navbar-scrolled, .navbar:hover{
     background-color: darkslategrey;
-    /*border-bottom: 2px solid darkslategrey;*/
     z-index: 1;
     -webkit-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
@@ -133,33 +134,19 @@ header {
     position: absolute;
     content: '';
     height: 2px;
-    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    /* adjust this to move up and down*/
     bottom: -4px;
-
-
-     /****** 
-     optional values below 
-     ******/
-        
-    /* center - (optional) use with adjusting width   */
-
-
+    /* center - (optional) use with adjusting width */
     margin: 0 auto;
 	left: 0;
     right: 0;
 	width: 50%;
 	background: #27ae60;
-	
 	/* optional animation */
-
-
  -webkit-transition:.5s;
  transition:.5s;
     }
-	 
-
-	/* optional hover classes used with anmiation */
-
+	/* Hover classes used with anmiation */
 	.underline:hover:after {
 	width: 80%;
 	background: #2dca6f;
@@ -205,29 +192,10 @@ header {
     display: block;
     margin-bottom: 10px;
 }
-
-.skill {
-    text-align: center;
-}
-.skill-img {
-    padding: 0 6px;
-    padding-bottom: 16px;
-    left: 50%;
-    float: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-.project-img{
-    padding: 10px 6px;
-/*    max-height: 200px;*/
-}
-.skill-img:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+.tiny-icon {
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 /*Bio and skills--------------------------------------------------------------------------------------------------------*/
 #bio{
@@ -246,6 +214,25 @@ header {
     margin-left: 5%;
     opacity: 0; /*Initializes opacity to zero*/
 }
+.skill {
+    text-align: center;
+}
+.skill-img {
+    padding: 0 6px;
+    padding-bottom: 16px;
+    left: 50%;
+    float: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.skill-img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
 /*Projects---------------------------------------------------------------------------------------------------------*/
 #projects{
     opacity: 0; /*Initial opacity*/
@@ -257,6 +244,9 @@ header {
 .grow:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);    
+}
+.project-img{
+    padding: 10px 6px;
 }
 /*Work experience------------------------------------------------------------------------------------------------------------*/
 
@@ -335,7 +325,6 @@ h5 {
 }
 .course-detail{
     font-size: 75%;
-/*    margin-top: 10px;*/
     line-height: 140%;
     padding:15px;
     
@@ -369,10 +358,6 @@ footer {
 .footer-nav li{
     display: inline-block;
     padding: 3% 11.1%;
-    /*border-right: 3px solid #2dca6f;
-    border-top: 3px solid #2dca6f;
-    border-bottom: 3px solid #2dca6f;
-    border-radius: 10%;*/
 }
 .footer-nav li:hover, .footer-nav li:active{
     color: yellow;
@@ -402,18 +387,4 @@ footer {
 }
 .js-scrolled-footer.animated{
     opacity: 1;
-}
-
-.icon-size {
-    height: 20px;
-    padding-right: 10px;
-    padding-top: 5px;
-}
-
-.hder-image-icon {
-    width: 80%;
-    padding-top: 10px;
-    float: right;
-    display: block;
-    border-radius: 0%;   
 }

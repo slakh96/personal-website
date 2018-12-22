@@ -3,11 +3,17 @@ var $ = jQuery;
 $(document).ready(function () {
     /*Fades in the page when the document is ready*/
     $('div.hidden').fadeIn(2000).removeClass('hidden');
+    /*If the document was loaded and it initialized to be not at the top (i.e. refresh the page) then add navbar bg.*/
+    var $nav = $(".navbar");
+    if ($(this).scrollTop() > $nav.height()){
+        $nav.addClass('navbar-scrolled');
+    }
     
     /*Changes the background color of the navigation*/
     $(function () {
         $(document).scroll(function () {
             var $nav = $(".navbar");
+            /*Toggles the class either if we go up to the top, or move from the top. */
             $nav.toggleClass('navbar-scrolled', $(this).scrollTop() > $nav.height());
         });
     });
