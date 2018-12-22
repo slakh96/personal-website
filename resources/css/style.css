@@ -116,8 +116,15 @@ header {
     -webkit-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
 /*-------------------------Fancy Underline stuff--------------------------------*/
- .underline {
+
+.underline {
        text-decoration: none; 
        position: relative; 
      }   
@@ -126,7 +133,7 @@ header {
     content: '';
     height: 2px;
     /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-    bottom: -4px; 
+    bottom: -4px;
 
 
      /****** 
@@ -134,6 +141,8 @@ header {
      ******/
         
     /* center - (optional) use with adjusting width   */
+
+
     margin: 0 auto;
 	left: 0;
     right: 0;
@@ -141,12 +150,15 @@ header {
 	background: #27ae60;
 	
 	/* optional animation */
+
+
  -webkit-transition:.5s;
  transition:.5s;
     }
 	 
 
 	/* optional hover classes used with anmiation */
+
 	.underline:hover:after {
 	width: 80%;
 	background: #2dca6f;
@@ -397,19 +409,10 @@ footer {
     padding-top: 5px;
 }
 
-
-
-
-
 .hder-image-icon {
     width: 80%;
     padding-top: 10px;
     float: right;
     display: block;
-    border-radius: 0%;
-    
-    
-    
+    border-radius: 0%;   
 }
-
-

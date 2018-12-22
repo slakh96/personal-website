@@ -21,8 +21,36 @@
     body{font-size: 16px;}
     section{padding: 30px 0;}
     .row, .hder-bg-area {padding: 0 4%;}
-    .stack {width: 100%;}
+    .stack {width: 100%;}/*Stacks the course and project descriptions vertically*/
     .navbar{display: none;}
+    
+    /*.main-nav{display: none;}*/
+/*
+    .mobile-nav-icon{display: inline-block;}
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block; Force a line break, so they display in a list
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+    }
+    
+    .main-nav{
+        float: left;
+    }
+*/
+
+
+    
+    
+    
     .hder-image-icon-div{display: none;}
     .hder-image-icon{display: none;}
     header{background-position: 50% 60%}
