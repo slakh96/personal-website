@@ -62,6 +62,7 @@ header {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0), rgba(0,0,0,0.7)), url(img/IMG_5189.JPG);/*Instead of 5714*/
     background-position: 60% 40%;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 .hder-bg-area {
