@@ -23,6 +23,7 @@
     .row, .hder-bg-area {padding: 0 4%;}
     .stack {width: 100%;}/*Stacks the course and project descriptions vertically*/
     .navbar{display: none;}
+    .contact-icon{width:18%;}
     
     /*Second picture at top not need to display on small screens*/
     .hder-image-icon-div{display: none;}
@@ -37,6 +38,7 @@
 /*For small phones, such as iPhone 4 and 5*/
 @media only screen and (max-width: 480px){
     .across{width: 25%;}
+    .contact-icon{width: 19%;}
     .hder-bg-area {
         transform: translate(-50%, -60%);
 
