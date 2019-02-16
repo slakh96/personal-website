@@ -53,6 +53,13 @@ h2:after{
 .hidden{
     display: none;
 }
+.p-blurb{
+    text-align: center; 
+    line-height: 1.5;
+    padding-bottom: 20px;
+    
+}
+
 /*------------Header----------------------------------------------*/
 header {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.0)), to(rgba(0,0,0,0.7))), url(img/IMG_5189.JPG);
@@ -387,4 +394,8 @@ footer {
 }
 .js-scrolled-footer.animated{
     opacity: 1;
+}
+p {
+    line-height: 1.5;
+     
 }
